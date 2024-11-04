@@ -4,8 +4,8 @@ public class TypeOfRoom {
 
 
 
-    private static String single;
-    private static String double;
+    private static String single_bed;
+    private static String double_bed;
     private static String queen;
     private static String king;
     private static String suite;
@@ -25,11 +25,11 @@ public class TypeOfRoom {
         Scanner sc = new Scanner(System.in);
         String roomtype = sc.nextLine();
 
-        if (roomtype == single){
+        if (roomtype == single_bed){
 
             System.out.println(" You have selected a single room");
 
-        } else if (roomtype== double) {
+        } else if (roomtype== double_bed) {
             
         }
     }
