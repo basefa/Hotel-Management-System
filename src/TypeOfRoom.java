@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 public class TypeOfRoom {
@@ -6,8 +7,8 @@ public class TypeOfRoom {
 
     private static String single_bed;
     private static String double_bed;
-    private static String queen;
-    private static String king;
+    private static String queen_bed;
+    private static String king_bed;
     private static String suite;
 
 
@@ -15,22 +16,32 @@ public class TypeOfRoom {
     public static void getRoomType() {
 
         System.out.println(" Please select the room you would like to reserve");
-        System.out.println("\t*MENU");
-        System.out.println(" Single");
-        System.out.println(" Double");
-        System.out.println(" Queen");
-        System.out.println(" King");
-        System.out.println(" Suite");
+        System.out.println();
+        System.out.println(" Select 1 for a Single bed");
+        System.out.println(" Select 2 for a Double bed");
+        System.out.println(" Select 2 for a Queen bed");
+        System.out.println(" Select 2 for a King bed");
+        System.out.println(" Select 2 for a Suite");
 
         Scanner sc = new Scanner(System.in);
-        String roomtype = sc.nextLine();
+        int roomtype = sc.nextInt();
 
-        if (roomtype == single_bed){
-
-            System.out.println(" You have selected a single room");
-
-        } else if (roomtype== double_bed) {
-            
+        if (roomtype == 1){
+            System.out.println(" You have selected a single room.");
+        } else if (roomtype == 2) {
+            System.out.println(" You have selected a double room.");
+        } else if (roomtype== 3) {
+            System.out.println(" You have selected a queen room.");
+        } else if (roomtype== 4) {
+            System.out.println(" You have selected a king room.");
+        } else if (roomtype== 5) {
+            System.out.println(" You have selected a Suite");
+        } else
+        {
+            System.out.println(" Invalid response");
         }
+
+
+
     }
 }
