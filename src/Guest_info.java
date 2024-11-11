@@ -37,6 +37,12 @@ public class Guest_info {
           this.email= email;
     }
 
+    //Method to display guest info
+    public void displayInfo(){
+          System.out.println("Guest ID: "+ guestID);
+          System.out.println("Guest Name: "+ guestName);
+          System.out.println("Email: "+ email);
+    }
 
 }
 
