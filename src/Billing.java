@@ -12,7 +12,7 @@ public class Billing {
     private static final double KING_BED_PRICE = 250.00;
     private static final double SUITE_PRICE = 300.00;
 
-    //Method to calculate totalBill
+    // Method to calculate totalBill
     public static void calculateBill (String roomType, int daysStayed){
         //Set room price based on selected room type
         switch (roomType.toLowerCase()) {

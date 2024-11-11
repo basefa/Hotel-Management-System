@@ -6,6 +6,9 @@ public class Main {
 
         TypeOfRoom.getRoomType();
 
+        //Prompt user for guest info
+        System.out.println ("Enter your Guest ID, Email, or Full Name");
+
 
     }
 }
