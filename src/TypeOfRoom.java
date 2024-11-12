@@ -72,7 +72,7 @@ public class TypeOfRoom {
             } else if (numberOfRooms == 3) {
                 System.out.println(" You have selected three " + roomType(roomType) + ("s"));
             } else {
-                System.out.println(" There are only three " + roomType(roomType)+(" available"));
+                System.out.println(" There are only three" + roomType(roomType)+(" available"));
             }
         } while (numberOfRooms !=0 && numberOfRooms <=4);
     }
