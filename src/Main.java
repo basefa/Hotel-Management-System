@@ -5,7 +5,7 @@ public class Main {
 
         System.out.println(" Thank you for choosing our management system");
 
-        // this method takes the reservation( type and quantity of room
+        // This method takes the reservation( type and quantity of room
         TypeOfRoom.getRoomType();
 
 
