@@ -39,10 +39,10 @@ public class Billing {
         // Calculate the room cost for the number of days stayed
         double roomCost = roomPrice * daysStayed;
 
-        // Total amount calculation
+        // Total amount
         totalAmount = roomCost;
 
-        // Display the total Bill
+        // Display total Bill
         displayBill(roomType, roomCost);
     }
 
@@ -59,13 +59,5 @@ public class Billing {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask for room type and days stayed
-        System.out.print("Enter room type (Single/Double/Queen/King/Suite): ");
-        String roomType = scanner.nextLine();
-        System.out.print("Enter number of days stayed: ");
-        daysStayed = scanner.nextInt();
-
-        // Calculate and display the bill
-        calculateBill(roomType, daysStayed);
     }
 }
