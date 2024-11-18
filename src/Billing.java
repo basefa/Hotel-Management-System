@@ -12,7 +12,7 @@ public class Billing {
     private static final double KING_BED_PRICE = 250.00;
     private static final double SUITE_PRICE = 300.00;
 
-    //Method to calculate totalBill
+    // Method to calculate totalBill
     public static void calculateBill (String roomType, int daysStayed){
         //Set room price based on selected room type
         switch (roomType.toLowerCase()) {
@@ -39,10 +39,10 @@ public class Billing {
         // Calculate the room cost for the number of days stayed
         double roomCost = roomPrice * daysStayed;
 
-        // Total amount calculation
+        // Total amount
         totalAmount = roomCost;
 
-        // Display the total Bill
+        // Display total Bill
         displayBill(roomType, roomCost);
     }
 
@@ -59,13 +59,5 @@ public class Billing {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Ask for room type and days stayed
-        System.out.print("Enter room type (Single/Double/Queen/King/Suite): ");
-        String roomType = scanner.nextLine();
-        System.out.print("Enter number of days stayed: ");
-        daysStayed = scanner.nextInt();
-
-        // Calculate and display the bill
-        calculateBill(roomType, daysStayed);
     }
 }
