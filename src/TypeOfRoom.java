@@ -25,6 +25,7 @@ public class TypeOfRoom {
             System.out.println(" 4) Select 4 for a King bed");
             System.out.println(" 5) Select 5 for a Suite");
             System.out.println(" hello");
+            System.out.println("test12312");
             Scanner sc = new Scanner(System.in);
             roomType = sc.nextInt();
 
