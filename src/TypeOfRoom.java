@@ -17,7 +17,7 @@ public class TypeOfRoom {
 
         System.out.println(" Please select the room you would like to reserve");
 
-        do {
+
             System.out.println();
             System.out.println(" 1) Select 1 for a Single bed");
             System.out.println(" 2) Select 2 for a Double bed");
@@ -48,15 +48,14 @@ public class TypeOfRoom {
                 System.out.println(" Invalid response");
             }
 
-        }
-        while (roomType != 0);
+
 
     }
 
 
     public static void roomQuantity() {
 
-        do {
+
             System.out.println(" How many rooms would you like to reserve ");
 
 
@@ -74,7 +73,7 @@ public class TypeOfRoom {
             } else {
                 System.out.println(" There are only three" + roomType(roomType)+(" available"));
             }
-        } while (numberOfRooms !=0 && numberOfRooms <=4);
+
     }
 
     public static String roomType( int roomType){
