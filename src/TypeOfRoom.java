@@ -1,5 +1,11 @@
 import javax.swing.*;
 import java.util.Scanner;
+/**
+ * This class allows the user to select a room type and reserve rooms.
+ * It handles room selection and the number of rooms a user wants to reserve.
+ * @author Bruck Asefa
+ * @version 4.0
+ */
 
 public class TypeOfRoom {
 
@@ -12,6 +18,9 @@ public class TypeOfRoom {
     private static int numberOfRooms;
     private static int roomType;
 
+    /**
+     * Prompts the user to select a room type and calls the roomQuantity method to determine the number of rooms.
+     */
     public static void getRoomType() {
 
 
@@ -52,7 +61,9 @@ public class TypeOfRoom {
 
     }
 
-
+    /**
+     * Asks the user how many rooms they would like to reserve and displays the selection.
+     */
     public static void roomQuantity() {
 
 
@@ -75,7 +86,12 @@ public class TypeOfRoom {
             }
 
     }
-
+    /**
+     * Returns the string representation of the room type based on the number selected.
+     *
+     * @param roomType The integer value representing the selected room type.
+     * @return The  description of the room type.
+     */
     public static String roomType( int roomType){
         String myRoomType=" ";
         if(roomType==1) {
