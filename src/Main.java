@@ -7,7 +7,6 @@ public class Main {
         System.out.println();
 
 
-
         //Prompt user for guest info
         System.out.println("Please enter your Guest ID: ");
         String guestID = scanner.nextLine();
@@ -27,7 +26,7 @@ public class Main {
         // Call activity method to event schedule
         Activity.activity(null);
 
-        // 4. Get Room Type
+        // Get Room Type
         System.out.println("Enter room type for billing (Single/Double/Queen/King/Suite): ");
         String roomType = scanner.nextLine();
         System.out.println("Enter number of days stayed: ");
